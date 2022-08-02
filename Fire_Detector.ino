@@ -44,10 +44,6 @@ pinMode(relay2,OUTPUT);
 pinMode(relay3,OUTPUT);
 pinMode(relay4,OUTPUT);
 timer.setInterval(1000L,sendSensor);
-lcd.print(0,0,"Farhan Ryo K.");
-lcd.print(0,1,"182408084");
-delay(2000);
-lcd.clear();
 }
 
 void loop() {
