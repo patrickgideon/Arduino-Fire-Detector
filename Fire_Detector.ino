@@ -26,10 +26,6 @@ void sendSensor(){
   suhu = analogRead(lm35);
   suhu1 = (suhu*(3.3/1024)*100)-2;
  tempC = sensors.getTempCByIndex(0);
- 
- /*else{
-  lcd.print(0,0,"Suhu Eror!!!    ");
- }*/
 }
 void setup() {
   lcd.clear();
