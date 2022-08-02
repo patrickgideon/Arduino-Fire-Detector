@@ -3,9 +3,9 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #include <BlynkSimpleEsp8266.h>
-char auth[] = "fdferdfdsf"; //token dari email
-char ssid[] = "12dasda0"; //nama wifi
-char pass[] = "001gfnvb2345adsa67"; //password
+char auth[] = "Token"; //token dari email
+char ssid[] = "ssid"; //nama wifi
+char pass[] = "passssssssss"; //password
 BlynkTimer timer;
 #define ONE_WIRE_BUS D8
 OneWire oneWire(ONE_WIRE_BUS);
@@ -24,7 +24,7 @@ int asap = 0;
 WidgetLCD lcd(V1);
 void sendSensor(){
   suhu = analogRead(lm35);
-  suhu1 = (suhu*(3.3/1024)*100)-2;
+  suhu1 = (suhu*(3.3/1024)*100)-2; // calibrate your sensor
  tempC = sensors.getTempCByIndex(0);
 }
 void setup() {
